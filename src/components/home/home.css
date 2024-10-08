@@ -1,5 +1,9 @@
 .home {
-    background-color: var(--first-gradient);
+    background-image: var(--first-gradient);
+    padding-bottom: 180px;
+}
+
+.home__wrapper {
     min-height: 100vh;
     display: grid;
     align-items: center;
@@ -18,6 +22,7 @@
 .home__subtitle,
 .home__job span {
     font-size: var(--small-font-size);
+    color: var(--title-color);
 }
 
 .home__subtitle span,
@@ -37,7 +42,7 @@
     line-height: 1.2;
     margin-top: 15px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .home__text {
@@ -91,6 +96,7 @@
     padding-bottom: 100%;
     border-radius: 50%;
     position: relative;
+    z-index: 1;
 }
 
 .home__profile {
@@ -113,6 +119,7 @@
     display: flex;
     align-items: center;
     position: absolute;
+    z-index: 1;
 }
 
 .home__data_one {
@@ -145,4 +152,32 @@
 .home__data .text_lg b,
 .home__data .text_sm b {
     color: var(--primary-color)
+}
+
+.home__data .text_lg b {
+    position: relative;
+    top: -4px;
+}
+
+.shape__1 {
+    width: 226px;
+    height: 226px;
+    top: -9%;
+    right: -3%;
+}
+
+.shape__2,
+.shape__3 {
+    width: 141px;
+    height: 141px;
+}
+
+.shape__2 {
+    bottom: 3%;
+    left: -31%;
+}
+
+.shape__3 {
+    bottom: -67px;
+    right: -20%;
 }
