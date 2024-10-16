@@ -1,7 +1,31 @@
+import { FaArrowRight } from 'react-icons/fa';
+import shapeTwo from '../../assets/shape-2.png'
 
-const Items = () => {
+const Items = ({projectItems}) => {
   return (
-    <div>Items</div>
+    <>
+      {projectItems.map((projectItem) => {
+        const { id, img, category, title, description } = projectItem;
+        return(
+          <div key={id} className="portfolio__items card card_two">
+            <div className="portfolio__img_wrapper">
+              <img src={img} alt="" className="portfolio__img" />
+            </div>
+
+            <span className="portfolio__category text-cs">{category}</span>
+            <h3 className="portfolio__title">{title}</h3>
+            <p className="portfolio__description">{description}</p>
+
+            <a href="" className="link">
+              See Pricing
+              <FaArrowRight className='link__icon'></FaArrowRight>
+            </a>
+
+            <img src={shapeTwo} alt="" className="shape c__shape" />
+          </div>
+        )
+      })}
+    </>
   )
 }
 
