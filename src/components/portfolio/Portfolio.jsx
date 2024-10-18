@@ -3,6 +3,7 @@ import List from "./List";
 import Items from "./Items";
 import { projects } from "../../Data";
 import './portfolio.css';
+import { AnimatePresence } from "framer-motion";
 
 const allNavList = [ 
   'all', 
@@ -14,7 +15,7 @@ console.log(allNavList);
 
 const Portfolio = () => {
   const [projectItems, setMenuItems] = useState(projects);
-  const [navList, setCategories] = useState(allNavList);
+  const [navList] = useState(allNavList);  // Removed 'setCategoreis' since it was causing errors
 
   const filterItems = (category) => {
     if (category === 'all') {
@@ -36,7 +37,9 @@ const Portfolio = () => {
         <List list={navList} filterItems={filterItems}/>
 
         <div className="portfolio__container container grid">
-            <Items projectItems={projectItems} />
+            <AnimatePresence initial={false}>
+              <Items projectItems={projectItems} />
+            </AnimatePresence>
         </div>
     </section>
   )
