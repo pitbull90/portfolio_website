@@ -1,6 +1,7 @@
-import React from 'react'
-import './pricing.css'
-import shapeTwo from '../../assets/shape-2.png'
+import React from 'react';
+import './pricing.css';
+import shapeTwo from '../../assets/shape-2.png';
+import { FaCheck, FaArrowRight } from 'react-icons/fa';
 
 function Pricing() {
   return (
@@ -9,8 +10,112 @@ function Pricing() {
         <p className='section__subtitle'>My <span>Price Board</span></p>
 
         <div className="pricing__container container grid">
-            <div className="pricing__item card card-one">
+            <div className="pricing__item card card_one">
+                <span className="pricing__subtitle text_cs">Hourly Basis</span>
+                <h3 className="pricing__price">39 <span>$</span> <em>Hour</em></h3>
                 
+                <p className="pricing__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <ul className="pricing__list">
+                  <li className="list__item">
+                    <FaCheck className='list__icon'></FaCheck>
+                    <span>Brand Design</span>
+                  </li>
+
+                  <li className="list__item">
+                    <FaCheck className='list__icon'></FaCheck>
+                    <span>Web Development</span>
+                  </li>
+
+                  <li className="list__item">
+                    <del>Advertising</del>
+                  </li>
+
+                  <li className="list__item">
+                    <del>Photography</del>
+                  </li>
+                </ul>
+
+                <a href="" className="btn pricing__btn text-cs">
+                  Start Project
+                  <FaArrowRight className='pricing__btn_icon'></FaArrowRight>
+
+                  <img src={shapeTwo} alt="" className="shape c__shape" />
+                </a>
+            </div>
+            
+            <div className="pricing__item_wrapper">
+              <span className="pricing__label text-cs">Popular</span>
+              <div className="pricing__item card card_one">
+                  <span className="pricing__subtitle text_cs">Freelancing</span>
+                  <h3 className="pricing__price">256 <span>$</span> <em>Week</em></h3>
+                  
+                  <p className="pricing__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                  <ul className="pricing__list">
+                    <li className="list__item">
+                      <FaCheck className='list__icon'></FaCheck>
+                      <span>Brand Design</span>
+                    </li>
+
+                    <li className="list__item">
+                      <FaCheck className='list__icon'></FaCheck>
+                      <span>Web Development</span>
+                    </li>
+
+                    <li className="list__item">
+                    <FaCheck className='list__icon'></FaCheck>
+                      <span>Advertising</span>
+                    </li>
+
+                    <li className="list__item">
+                      <del>Photography</del>
+                    </li>
+                  </ul>
+
+                  <a href="" className="btn pricing__btn text-cs">
+                    Start Project
+                    <FaArrowRight className='pricing__btn_icon'></FaArrowRight>
+
+                    <img src={shapeTwo} alt="" className="shape c__shape" />
+                  </a>
+              </div>
+            </div>
+
+            <div className="pricing__item card card_one">
+                <span className="pricing__subtitle text_cs">Full Time</span>
+                <h3 className="pricing__price">1,249 <span>$</span> <em>Month</em></h3>
+                
+                <p className="pricing__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <ul className="pricing__list">
+                  <li className="list__item">
+                    <FaCheck className='list__icon'></FaCheck>
+                    <span>Brand Design</span>
+                  </li>
+
+                  <li className="list__item">
+                    <FaCheck className='list__icon'></FaCheck>
+                    <span>Web Development</span>
+                  </li>
+
+                  <li className="list__item">
+                  <FaCheck className='list__icon'></FaCheck>
+                    <span>Advertising</span>
+                  </li>
+
+                  <li className="list__item">
+                  <FaCheck className='list__icon'></FaCheck>
+                    <span>Photography</span>
+                  </li>
+                </ul>
+
+                <a href="" className="btn pricing__btn text-cs">
+                  Start Project
+                  <FaArrowRight className='pricing__btn_icon'></FaArrowRight>
+
+                  <img src={shapeTwo} alt="" className="shape c__shape" />
+                </a>
             </div>
         </div>
     </section>
