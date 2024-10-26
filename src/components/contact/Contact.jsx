@@ -1,8 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
-import axios from 'axios';
+import axios, { formToJSON } from 'axios';
 import './contact.css';
 import { FaRegAddressBook, FaRegEnvelope, FaRegUser, FaRegMap } from 'react-icons/fa';
+// require('dotenv').config()
+import ('dotenv')
+
+const emailAPI = import.meta.env.VITE_CONTACT_FORM_API
 
 function Contact() {
   const [form, setForm] = useState({ 
@@ -22,7 +26,7 @@ function Contact() {
     e.preventDefault();
 
     axios.post(
-      'https://api.sheetbest.com/sheets/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXX', 
+      `https://api.sheetbest.com/sheets/${emailAPI}`, 
       form
     )
     .then(
