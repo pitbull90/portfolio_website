@@ -8,6 +8,7 @@ import Testimonials from './components/testimonials/testimonials.jsx'
 import Pricing from './components/pricing/Pricing.jsx'
 import Blog from './components/blog/Blog.jsx'
 import Contact from './components/contact/Contact.jsx'
+import Footer from './components/footer/Footer.jsx'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Pricing />
       <Blog />
       <Contact />
+      <Footer />
     </main>
   )
 }
