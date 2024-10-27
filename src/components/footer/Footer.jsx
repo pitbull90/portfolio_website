@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className=" ">
         <div className="footer__container container grid">
             <div className='footer__socials'>
                 <a href='' className='footer__social-link'>

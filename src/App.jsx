@@ -9,12 +9,14 @@ import Pricing from './components/pricing/Pricing.jsx'
 import Blog from './components/blog/Blog.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
+import Header from './components/header/Header.jsx'
 
 
 function App() {
 
   return (
     <main className='main'>
+      <Header />
       <Home/>
       <Services />
       <Skills />

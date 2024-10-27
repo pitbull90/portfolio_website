@@ -45,16 +45,16 @@ const Home = () => {
           <p className='home__text'>From Phoenix, Arizona. I have reach eperience in web design, also I am good at WordPress. I love to talk with you about our unique</p>
 
           <div className='home__socials'>
-            <a href='' className='home__social-link'>
-              <FaFacebook />
-            </a>
-            <a href='' className='home__social-link'>
-              <FaInstagram />
-            </a>
-            <a href='' className='home__social-link'>
-              <FaGithub />
-            </a>
-        </div>
+              <a href='' className='home__social-link'>
+                <FaFacebook />
+              </a>
+              <a href='' className='home__social-link'>
+                <FaInstagram />
+              </a>
+              <a href='' className='home__social-link'>
+                <FaGithub />
+              </a>
+          </div>
 
         <div className='home__btns'>
           <a href='' className='btn text-cs'>DownLoad CV</a>
