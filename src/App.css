@@ -71,6 +71,37 @@
 }
 
 /* ----------------------------------- *\
+#LIGHT THEME
+/* ----------------------------------- */ 
+
+.light_theme {
+  --title-color: #000000;
+  --text-color: #262626;
+  --bg-color: #f0ebe3;
+  --bg-color-alt: #ffffff;
+  --container-color: #ffffff;
+  --border-color: #000000;
+
+  /**
+    * shadow
+  */
+
+  --shadow: 5px 5px rgb(0 0 0  / 20%);
+}
+
+.light_theme .skills__bar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.light_theme .skills__percentage {
+  background: var(--border-color);
+} 
+
+.light_theme .skills__percentage span {
+  background-color: var(--primary-color);
+}
+
+/* ----------------------------------- *\
 #RESET
 /* ----------------------------------- */ 
 
@@ -189,10 +220,13 @@ img {
   opacity: 1;
 }
 
-.shape {
-  position: absolute;
+.dark_theme .shape {
   filter: invert(1);
   opacity: 0.6;
+}
+
+.shape {
+  position: absolute;
 }
 
 .section {
