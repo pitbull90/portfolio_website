@@ -1,5 +1,6 @@
 import React from 'react';
 import './pricing.css';
+import shapeOne from '../../assets/shape-1.png';
 import shapeTwo from '../../assets/shape-2.png';
 import { FaCheck, FaArrowRight } from 'react-icons/fa';
 
@@ -117,6 +118,10 @@ function Pricing() {
                   <img src={shapeTwo} alt="" className="shape c__shape" />
                 </a>
             </div>
+        </div>
+
+        <div className="section__deco deco__left">
+          <img src={shapeOne} alt="" className='shape' />
         </div>
     </section>
   )

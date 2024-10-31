@@ -3,6 +3,7 @@ import { useState } from 'react';
 import axios, { formToJSON } from 'axios';
 import './contact.css';
 import { FaRegAddressBook, FaRegEnvelope, FaRegUser, FaRegMap } from 'react-icons/fa';
+import shapeOne from '../../assets/shape-1.png';
 // require('dotenv').config()
 import ('dotenv')
 
@@ -136,6 +137,10 @@ function Contact() {
               <button type='submit' className='btn text-cs'>Send Message</button>
             </div>
           </form>
+        </div>
+
+        <div className="section__deco deco__left">
+          <img src={shapeOne} alt="" className='shape' />
         </div>
     </section>
   )

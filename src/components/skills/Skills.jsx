@@ -1,4 +1,5 @@
-import { skills } from '../../Data.jsx'
+import { skills } from '../../Data.jsx';
+import shapeOne from '../../assets/shape-1.png';
 import './skills.css'
 
  const Skills = () => {
@@ -27,6 +28,10 @@ import './skills.css'
                     </div>
                 )
             })}
+        </div>
+
+        <div className="section__deco deco__left">
+          <img src={shapeOne} alt="" className='shape' />
         </div>
     </section>
   )
