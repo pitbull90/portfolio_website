@@ -22,6 +22,7 @@ const Services = () => {
         <p className='section__subtitle'>My <span>Services</span></p>
 
         <Swiper
+         spaceBetween={30}
          pagination={{
            clickable: true,
          }}
